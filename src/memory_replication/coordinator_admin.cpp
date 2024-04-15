@@ -626,7 +626,7 @@ void CoordinatorAdmin::applyToMemory(int server, uint64_t address, char *value) 
 void CoordinatorAdmin::readLog(int server, std::vector<SerializableAVPair::AVPair*>& log, Barrier *barrier) {
     // The max RDMA op queue size is ~16000, so can't have more than this many outstanding requests
     // TODO: max queue size is system-dependent, make it variable
-    const uint64_t batch_size = 16000;
+    const uint64_t batch_size = 1600;
     uint64_t read_entries = 0;
     std::vector<WorkRequest *> requests(RM_LOG_SIZE);
     log.reserve(RM_LOG_SIZE);

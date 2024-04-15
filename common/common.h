@@ -21,11 +21,11 @@
 // This could be deduced from the config file, but the potential of a local memory node complicates it
 
 // Number of memory servers to use
-#define TOTAL_MEMORY_SERVERS 3
+#define TOTAL_MEMORY_SERVERS 1
 // Size of the quorum
 #define QUORUM ((TOTAL_MEMORY_SERVERS/2) + 1)
 // File containing memory server addresses and ports
-#define CONFIG_FILE "/home/mkazhami/Sift/servers.config"
+#define CONFIG_FILE "/root/projects/raft_groups/Sift/servers.config"
 
 /* VARIOUS SYSTEM FLAGS */
 
