@@ -52,7 +52,7 @@ inline void stack_trace() {
 }
 
 #define DEBUG 1
-#define LEVEL 3
+#define LEVEL 0
 #define LogMsg(Level, SEVERITY, x) {\
             do {\
                 if (DEBUG && Level >= LEVEL) {\
